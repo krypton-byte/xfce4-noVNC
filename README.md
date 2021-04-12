@@ -7,3 +7,6 @@
 <br><br><br>
 <p>VNC VIEWER</p>
 <img src="image/2.png">
+<br><br><br>
+<p>DESKTOP</p>
+<img src="image/3.png">
