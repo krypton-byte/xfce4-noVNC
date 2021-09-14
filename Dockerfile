@@ -15,4 +15,4 @@ RUN mkdir /work
 RUN cd /work&&git clone https://github.com/novnc/noVNC/
 COPY . /work
 WORKDIR /work
-CMD rm /work/Dockerfile&& Xvnc :0 -geometry 1280x720&startxfce4&python3 ngrok_.py&cd /work/noVNC && ./utils/launch.sh --vnc :5900 --listen ${PORT}
+CMD rm /work/Dockerfile&& Xvnc :0 -geometry 1280x720&startxfce4&python3 ngrok_.py&cd /work/noVNC && ./utils/novnc_proxy --vnc :5900 --listen ${PORT}
