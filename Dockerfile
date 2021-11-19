@@ -2,7 +2,7 @@ from python:3.9
 RUN set -ex;\
     apt-get update;\
     apt-mark hold keyboard-configuration;\
-    apt-get install git tightvncserver expect websockify qemu-system-x86 xfce4 -y
+    apt-get install git tightvncserver expect websockify qemu-system-x86 xfce4 dbus-x11 -y
 ENV DISPLAY=:0
 RUN pip3 install websockify pyngrok
 #OPSIONAL
